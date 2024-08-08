@@ -84,6 +84,48 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body {
+  font-family: nunito sans;
+}
+
+h1, h2, h3 {
+  font-family: alata;
+}
+
+p {
+  font-family: nunito sans;
+}
+
+header {
+  background-color: #351D77;
+  color: white;
+}
+
+#main-nav {
+  color: white;
+}
+
+.nav-item {
+  list-style: none;
+  float: right;
+}
+
+a {
+  color: white;
+  display: block;
+  padding: 8px;
+}
+
+footer {
+  background-color: #351D77;
+  color: white;
+  text-align: center;
+}
+
+.social-icons {
+  list-style: none;
+  display: inline-block;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
