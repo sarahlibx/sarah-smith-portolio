@@ -83,7 +83,7 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
+/* default styles */
 body {
   font-family: nunito sans;
   background-color: #EEE4F0;
@@ -96,13 +96,13 @@ h1, h2, h3 {
 p {
   font-family: nunito sans;
 }
-
+/* header styling */
 header {
   background-color: #351D77;
   color: white;
   padding-bottom: 2em;
 }
-
+/* nav styling */
 #main-nav {
   padding: 2em;
 }
@@ -123,7 +123,7 @@ header {
   transition-duration: 0.4s;
   padding: 0.5em;
 }
-
+/* home styling */
 .home-title {
   padding: 2em;
   text-align: center;
@@ -133,7 +133,7 @@ header {
 .home-description {
   text-align: center;
 }
-
+/* footer */
 footer {
   background-color: #351D77;
   color: white;
@@ -151,6 +151,7 @@ footer {
   padding: 8px;
 }
 
+/* body styling */
 #projects {
   margin-left: auto;
   margin-right: auto;
