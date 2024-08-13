@@ -121,11 +121,12 @@ header {
   text-transform: uppercase;
   text-decoration: none;
   transition-duration: 0.4s;
-  padding: 0.5em;
+  padding: 0.3em;
 }
+
 /* home styling */
 .home-title {
-  padding: 2em;
+  padding: 3em 0em 1em 0em;
   text-align: center;
   text-transform: uppercase;
 }
@@ -133,11 +134,17 @@ header {
 .home-description {
   text-align: center;
 }
+
+.home-description h2 {
+  text-align: center;
+  padding: 0 100px;
+}
 /* footer */
 footer {
   background-color: #351D77;
   color: white;
   text-align: center;
+  padding: 10px;
 }
 
 .social-icons {
@@ -152,11 +159,110 @@ footer {
 }
 
 /* body styling */
-#projects {
-  margin-left: auto;
-  margin-right: auto;
+
+.about-wrapper {
+  margin: 20px 50px;
 }
 
+.about-wrapper h2 {
+  text-transform: uppercase;
+  font: 2rem;
+}
+
+.about-wrapper p {
+  font-family: alata;
+  text-align: left;
+  margin: 15px 0;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+#skills-tools {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  gap: 20px 15px;
+}
+
+#skills-tools h2 {
+  text-transform: uppercase;
+}
+
+#skills-tools li {
+  text-align: left;
+  list-style: none;
+}
+
+.projects-wrapper {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+  gap: 5px 0px;
+}
+
+.projects-wrapper h3 {
+  text-transform: uppercase;  
+}
+
+.project-1 {
+  width: 50%;
+  text-align: center;
+  color: #351D77; 
+  align-content: space-between;
+  gap: 5px 0px;
+}
+
+.project-2 {
+  width: 50%; 
+  text-align: center;
+  color: #351D77;
+  align-content: space-between;
+  gap: 5px 0px;
+}
+
+.project-3 {
+  width: 50%; 
+  text-align: center;
+  color: #351D77;
+  align-content: space-between;
+  gap: 5px 0px;
+}
+
+.project-4 {
+  width: 50%; 
+  text-align: center;
+  color: #351D77;
+  align-content: space-between;
+  gap: 5px 0px;
+}
+
+.project-5 {
+  width: 50%; 
+  text-align: center;
+  color: #351D77;
+  align-content: space-between;
+  gap: 5px 0px;
+}
+
+.project-1 p {
+  padding: 0px 50px;
+}
+
+.project-2 p {
+  padding: 0px 50px;
+}
+
+.project-3 p {
+  padding: 0px 50px;
+}
+
+.project-4 p {
+  padding: 0px 50px;
+}
+
+.project-5  p {
+  padding: 0px 50px;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
