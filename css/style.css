@@ -99,7 +99,7 @@ p {
 /* header styling */
 header {
   color: #351D77;
-  padding: 1.5em;
+  padding: 1em 1.5em;
 }
 /* nav styling */
 #main-nav {
@@ -110,7 +110,7 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 1em;
+  padding: 0.5em;
 }
 
 .nav-bar {
@@ -122,39 +122,38 @@ header {
 
 .nav-item a {
   font-family: alata;
-  color: white;
-  background-color: #EC91C4;
-  border-radius: 15px;
+  color: 351D77;
   text-transform: uppercase;
-  text-decoration: none;
-  transition-duration: 0.4s;
+  text-decoration: none; 
   padding: 0.3em;
+}
+
+a:hover {
+  font-size: 20px;
 }
 
 /* home styling */
 
-.hero-img {
-  display: flex;
-  justify-content: center;
-  padding-left: 50px;
-}
-
-.hero-img img {
-  border-radius: 50%;
-  width: 300px;
-  height: 300px;
-}
-
 .home-description {
+ padding-left: 2em;
+ padding-top: 2em;
+} 
+
+.home-description p {
   display: flex;
-  text-align: center;
+  align-items: center;
+  font-size: 1rem;
+  padding: 0px;
+	margin: 0px;
 }
 
 .home-description h2 {
   display: flex;
-  justify-content: flex-end;
   align-items: center;
-  padding: 0 75px;
+  font-size: 3em;
+  text-shadow: white 2px 5px;
+  padding: 0px;
+	margin: 0px 0px 3px 0px;
 }
 
 /* footer */
@@ -179,49 +178,29 @@ footer {
 /* body styling */
 
 #about-me {
-  padding: 10px;
+  padding: 5px;
 }
 
-#about-me h2{
+#about-me h3 {
+  color:#351D77;
+  text-shadow: white 2px 3px;
   text-align: center;
   text-transform: uppercase;
   font: 2rem;
 }
 
 .about-wrapper {
-  display: flex;
-  flex-wrap: row wrap;
+/* have to add still */
 }
 
 .about-p {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
   flex-basis: 100%;
   text-align: center;
   font-family: alata;
-  font-size: 1rem;
+  color:#351D77;
+  font-size: 1.1rem;
   line-height: 1.75;
-  padding: 0 10px;
-}
-
-#skills-tools {
-  display: flex;
-  flex-flow: column wrap;
-}
-
-.skills-wrapper {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.skills-wrapper h2 {
-  text-transform: uppercase;
-}
-
-.skills-wrapper li {
-  list-style: none;
+  padding: 0 35px;
 }
 
 .projects-wrapper {
@@ -241,6 +220,11 @@ footer {
   color: #351D77; 
   align-content: space-between;
   gap: 5px 0px;
+  padding-top: 10px;
+}
+
+.project-1:hover {
+  outline: 5px solid #EC91C4;
 }
 
 .project-2 {
@@ -249,6 +233,11 @@ footer {
   color: #351D77;
   align-content: space-between;
   gap: 5px 0px;
+  padding-top: 10px;
+}
+
+.project-2:hover {
+    outline: 5px solid #EC91C4;
 }
 
 .project-3 {
@@ -293,6 +282,22 @@ footer {
 
 .project-5  p {
   padding: 0px 50px;
+}
+
+#skills-tools {
+ 
+}
+
+.skills-wrapper {
+ display: flex;
+}
+
+.skills-wrapper h2 {
+  text-transform: uppercase;
+}
+
+.skills-wrapper li {
+  list-style: none;
 }
 /* ==========================================================================
    Helper classes
