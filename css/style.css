@@ -166,13 +166,16 @@ footer {
 }
 
 .social-icons {
+  display: flex;
+  justify-content: center;
   list-style: none;
+  color: white;
 }
 
-.social-icons a {
+.social-icons img {
   color: white;
-  display: block;
-  padding: 8px;
+  width: 25px;
+  height: 25px;
 }
 
 /* body styling */
@@ -246,6 +249,11 @@ footer {
   color: #351D77;
   align-content: space-between;
   gap: 5px 0px;
+  padding-top: 10px;
+}
+
+.project-3:hover {
+  outline: 5px solid #EC91C4;
 }
 
 .project-4 {
@@ -254,6 +262,11 @@ footer {
   color: #351D77;
   align-content: space-between;
   gap: 5px 0px;
+  padding-top: 10px;
+}
+
+.project-4:hover {
+  outline: 5px solid #EC91C4;
 }
 
 .project-5 {
@@ -262,6 +275,11 @@ footer {
   color: #351D77;
   align-content: space-between;
   gap: 5px 0px;
+  padding-top: 10px;
+}
+
+.project-5:hover {
+  outline: 5px solid #EC91C4;
 }
 
 .project-1 p {
@@ -284,21 +302,44 @@ footer {
   padding: 0px 50px;
 }
 
-#skills-tools {
- 
+#skills-tools-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  flex-basis: 150px;
+  color:#351D77;
+}
+
+#skills-tools-wrapper h2 {
+  text-transform: uppercase;
+  align-items: baseline;
+  color:#351D77;
+  text-shadow: white 2px 3px;
 }
 
 .skills-wrapper {
  display: flex;
 }
 
-.skills-wrapper h2 {
-  text-transform: uppercase;
+.tools-wrapper {
+  display: flex;
 }
 
 .skills-wrapper li {
   list-style: none;
 }
+
+.skills-wrapper li:hover {
+  font-weight: bold;
+}
+
+.tools-wrapper li {
+  list-style: none;
+}
+
+.tools-wrapper li:hover {
+  font-weight: bold;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
