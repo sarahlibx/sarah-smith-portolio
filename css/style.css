@@ -332,6 +332,7 @@ justify-content: center;
   justify-content: space-evenly;
   flex-basis: 150px;
   color:#351D77;
+  padding: 20px 0 50px 0;
 }
 
 #skills-tools-wrapper h2 {
