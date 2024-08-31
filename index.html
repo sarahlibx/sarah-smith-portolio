@@ -28,9 +28,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Alata&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 
 <body>
+  <div class="layer"></div>
 
   <!-- Add your site or application content here -->
   <script src="js/app.js"></script>
@@ -43,19 +48,23 @@
           <li class="nav-item">
             <a class="active" href="#home">Home</a></li>
           <li class="nav-item">
-            <a href="#aboutme">About Me</a></li>
-          <li class="nav-item">  
-            <a href="#skills">Skills</a></li>
-          <li class="nav-item">  
+            <a href="#about-me">About Me</a></li>
+          <li class="nav-item">   
             <a href="#projects">Projects</a></li>
-          <li class="nav-item">  
+          <li class="nav-item">
+            <a href="#skills-tools-wrapper">Skills</a></li>
+          <li class="nav-item">   
             <a href="#contact" id="contact-link">Contact</a></li>
           </ul>
     </nav>
   </div>
   <div class="home-description">
     <p>Hi, my name is</p>
-    <h2>Sarah Smith.</h2>
+    <h2>Sarah Smith
+      <span style ="--i:1">.</span>
+      <span style ="--i:2">.</span>
+      <span style ="--i:3">.</span>
+    </h2>
     <p>I'm a full stack developer <br> based in Orlando, FL</p>
   </div>
 </div>
@@ -76,9 +85,10 @@
 </section>
 
 <section id="projects">
+  <h3>Projects</h3>
 <div class="projects-wrapper">
   <div class="project-1">
-    <a href="" target="_blank" rel="noopener">
+    <a href="https://github.com/sarahlibx/recipe-app" target="_blank" rel="noopener">
       <img src="./img/full stack recipe.jpeg" alt="Recipe App" width="300" height="200"></a>
   <h3>Recipe App</h3>
     <p>"A full stack web app that allows users to create, view, edit, and delete detailed recipes. Built using React and Flask."</p>
@@ -152,9 +162,9 @@
   <div class="contact-info">
   <h2 class="contact-header">Let's get in touch!</h2>
   <ul class="social-icons">
-    <li><a href="mailto:sarahlib90@gmail.com" target="_blank"><i class="fa-solid fa-envelope" alt="Email me"></i></a></li>
-    <li><a href="https://github.com/sarahlibx" target="_blank"><i class="fa-brands fa-github" alt="GitHub"></i></a></li>
-    <li><a href="https://www.linkedin.com/in/sarah-smith-9b559921b" target="_blank"><i class="fa-brands fa-linkedin" alt="Linked In"></i></a></li>
+    <li><a href="mailto:sarahlib90@gmail.com" target="_blank"><i class="fa-solid fa-envelope fa-2xl" alt="Email me"></i></a></li>
+    <li><a href="https://github.com/sarahlibx" target="_blank"><i class="fa-brands fa-github fa-2xl" alt="GitHub"></i></a></li>
+    <li><a href="https://www.linkedin.com/in/sarah-smith-9b559921b" target="_blank"><i class="fa-brands fa-linkedin fa-2xl" alt="Linked In"></i></a></li>
   </ul>
 </div>
 <div class="copyright-wrapper">
