@@ -11,12 +11,6 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
-}
-
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -84,9 +78,23 @@ textarea {
    Author's custom styles
    ========================================================================== */
 /* default styles */
+
+html {
+  color: #222;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
 body {
   font-family: nunito sans;
-  background-color: #EEE4F0;
+  background: #EEE4F0;
+}
+
+.image {
+  min-height: 100%;
+  min-height:100%;
+  background-image:linear-gradient(0deg, rgba(222, 132, 236, 0.3), rgba(236, 92, 176, 0.295)), url(./img/cloudbackground.jpg);
+  background-size:cover;
 }
 
 /*.layer {
@@ -109,17 +117,22 @@ p {
 /* header styling */
 header {
   color: #351D77;
-  padding: 1em 1.5em;
+  padding: 1em;
 }
 /* nav styling */
+
+.content-wrapper nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
 #main-nav {
   height: 100%;
-  margin-right: 75px;
 }
 
 .nav-item {
   display: flex;
-  flex-direction: row;
+  justify-content: flex-end;
   align-items: center;
   padding: 0.5em;
 }
@@ -129,6 +142,7 @@ header {
   justify-content: flex-end;
   align-items: center;
   list-style: none;
+  height: 50px;
 }
 
 .nav-item a {
@@ -147,22 +161,26 @@ a:hover {
 
 .home-description {
   margin: 25px;
-  padding-left: 5em;
+  padding: 1em 3em 3em 3em;
 } 
 
 .home-description p {
   display: flex;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .home-description h2 {
   display: flex;
   align-items: center;
-  font-size: 4em;
+  font-size: 2.5em;
   text-shadow: white 2px 5px;
   padding: 0px;
-	margin: 0px 0px 3px 0px;
+}
+
+.home-description span {
+  display: flex;
+  align-self: flex-end; 
 }
 
 /* footer */
@@ -179,6 +197,7 @@ footer {
   justify-content: space-between;
   list-style: none;
   color: white;
+  padding: 0;
 }
 
 .social-icons i {
@@ -238,7 +257,7 @@ justify-content: center;
 }
 
 .project-1 {
-  width: 50%;
+  width: 100%;
   text-align: center;
   color: #351D77; 
   align-content: space-between;
@@ -252,7 +271,7 @@ justify-content: center;
 } */
 
 .project-2 {
-  width: 50%; 
+  width: 100%; 
   text-align: center;
   color: #351D77;
   align-content: space-between;
@@ -266,7 +285,7 @@ justify-content: center;
 } */
 
 .project-3 {
-  width: 50%; 
+  width: 100%;  
   text-align: center;
   color: #351D77;
   align-content: space-between;
@@ -280,7 +299,7 @@ justify-content: center;
 } */
 
 .project-4 {
-  width: 50%; 
+  width: 100%;  
   text-align: center;
   color: #351D77;
   align-content: space-between;
@@ -293,7 +312,7 @@ justify-content: center;
   outline: 5px solid #EC91C4;
 } */
 
-.project-5 {
+/* .project-5 {
   width: 50%; 
   text-align: center;
   color: #351D77;
@@ -303,7 +322,7 @@ justify-content: center;
   padding: 20px 10px 10px 10px;
 }
 
-/* .project-5:hover {
+.project-5:hover {
   outline: 5px solid #EC91C4;
 } */
 
@@ -323,9 +342,9 @@ justify-content: center;
   padding: 0px 50px;
 }
 
-.project-5  p {
+/* .project-5  p {
   padding: 0px 50px;
-}
+} */
 
 #skills-tools-wrapper {
   display: flex;
@@ -340,14 +359,17 @@ justify-content: center;
   align-items: baseline;
   color:#351D77;
   text-shadow: white 2px 3px;
+  padding: 0 2em;
 }
 
 .skills-wrapper {
  display: flex;
+ flex-wrap: wrap;
 }
 
 .tools-wrapper {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .skills-wrapper li {
@@ -448,6 +470,41 @@ justify-content: center;
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+
+/* media queries */
+
+@media only screen and (min-width: 768px) {
+
+  .content-wrapper {
+    max-width: 640px;
+    margin: 100px 0;
+}
+
+  h2 {
+  font-size: 2.25em;
+  line-height: 1.333;
+}
+
+  h3 {
+  font-size: 1em;
+  line-height: 1.25;
+}
+
+  /* Hero Area */
+  
+  .home-description {
+    min-height: 600px;
+    font-size: 3em;
+    line-height: 1;
+    margin: 0;
+  }
+
+}
+
+@media  only screen and (min-width: 1200px) {
+
+}   
+
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
