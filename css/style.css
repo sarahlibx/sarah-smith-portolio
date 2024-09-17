@@ -83,18 +83,13 @@ html {
   color: #222;
   font-size: 1rem;
   line-height: 1.4;
+  min-height: 100%;
+  background-image: linear-gradient(0deg, rgba(222, 132, 236, 0.337), rgba(224, 167, 241, 0.295)), url(../img/cloudbackground.jpg);
+  background-size: cover;
 }
 
 body {
   font-family: nunito sans;
-  background: #EEE4F0;
-}
-
-.image {
-  min-height: 100%;
-  min-height:100%;
-  background-image:linear-gradient(0deg, rgba(222, 132, 236, 0.3), rgba(236, 92, 176, 0.295)), url(./img/cloudbackground.jpg);
-  background-size:cover;
 }
 
 /*.layer {
@@ -185,7 +180,7 @@ a:hover {
 
 /* footer */
 footer {
-  background-color: #351D77;
+  background-color: #351D77; opacity: 0.8;
   color: white;
   text-align: center;
   display: flex;
