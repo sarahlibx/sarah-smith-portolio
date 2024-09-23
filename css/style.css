@@ -118,26 +118,23 @@ header {
 
 .content-wrapper nav {
   display: flex;
-  justify-content: flex-end;
 }
 
 #main-nav {
   height: 100%;
 }
 
-.nav-item {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 0.5em;
-}
-
 .nav-bar {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  justify-content: center;
   list-style: none;
-  height: 50px;
+  margin: 30px 0px;
+  padding: 0.3em;
+}
+
+.nav-item {
+  align-items: center;
+  padding: 0.5em;
 }
 
 .nav-item a {
@@ -145,7 +142,6 @@ header {
   color: #351D77;
   text-transform: uppercase;
   text-decoration: none; 
-  padding: 0.3em;
 }
 
 a:hover {
@@ -471,7 +467,7 @@ justify-content: center;
 @media only screen and (min-width: 768px) {
 
   .content-wrapper {
-    max-width: 640px;
+    max-width: 700px;
     margin: 100px 0;
 }
 
@@ -485,19 +481,96 @@ justify-content: center;
   line-height: 1.25;
 }
 
+#main-nav {
+  display: flex;
+}
+
+.content-wrapper nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-item {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0.5em;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  height: 50px;
+}
+
   /* Hero Area */
   
-  .home-description {
-    min-height: 600px;
-    font-size: 3em;
-    line-height: 1;
-    margin: 0;
-  }
+.home-description {
+  min-height: 600px;
+  font-size: 3em;
+  line-height: 1;
+  margin: 0;
+}
+
+#skills-tools-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+} 
+
+.skills-wrapper {
+  justify-content: center;
+}
+
+.tools-wrapper {
+  justify-content: center;
+}
 
 }
 
-@media  only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
 
+.content-wrapper {
+  max-width: 1000px;
+}
+
+.content-wrapper nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-item {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0.5em;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  height: 50px;
+}
+
+.home-description {
+  padding-bottom: 30px;
+}
+
+#skills-tools-wrapper {
+  display: flex;
+  justify-content: space-around;
+} 
+
+.skills-wrapper {
+  justify-content: center;
+}
+
+.tools-wrapper {
+  justify-content: center;
+}
 }   
 
 
