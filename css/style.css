@@ -568,20 +568,26 @@ footer {
     padding: 0.5em;
   }
 
+  .home-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
   .home-description {
+    justify-content: center;
     padding-left: 100px;
   }
 
   .about-me-image {
-    display: flex;
     justify-content: center;
+    align-items: center;
+    padding-right: 100px;
   }
 
   .round-image {
-    align-items: center;
     border-radius: 50%;
-    width: 30%;
-    height: auto;
+    width: 75%;
+    height: 75%;
   }
 
   .project-1 {
